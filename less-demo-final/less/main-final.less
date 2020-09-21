@@ -1,0 +1,70 @@
+@import 'mixins';
+
+
+//Global styles
+body {
+    font-family: @primary-font;
+}
+
+.btn-primary {
+    background-color: @gray;
+    border-color: @gray;
+    &:hover {
+        background-color: @gray;
+        border-color: @gray;
+    }
+}
+
+//nav and footer
+.nav {
+    height: 40px;
+    background-color: @light-green;
+}
+
+footer {
+    background-color: @gray;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+//index specific
+#index {
+    .jumbotron {
+        background-image: linear-gradient(to right, @light-green, @dark-green);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .border-bottom-thick();
+        h1 {
+            display: inline-block;
+            .border-left();
+            .border-right();
+        }
+    }
+    
+    section {
+        padding: 20px 0;
+        h2 {
+            color: @red;
+            display: inline-block;
+            .border-left();
+            .border-right();
+        }
+        h3 {
+            color: @dark-green;
+            .border-left();
+        }
+        h4 {
+            color: @light-green;
+            margin-top: 40px;
+        }
+        &:first-of-type {
+            .border-bottom-thin();
+        }
+    }
+}
+
+
