@@ -1,24 +1,7 @@
-body {
-  font-family: 'Roboto';
-}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
-}
-ul {
-  list-style-type: none;
-}
-ul li {
-  display: inline;
-  padding: 3%;
-}
-ul li span {
-  color: #ee252f;
-}
-nav {
-  padding: 3.5%;
-  background-color: #F8DF1F;
 }
