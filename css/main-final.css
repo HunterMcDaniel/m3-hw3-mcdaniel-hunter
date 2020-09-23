@@ -1,12 +1,25 @@
 body {
   font-family: 'Roboto';
 }
+p {
+  font-size: 1.2em;
+}
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+.bordered {
+  border-radius: 8px;
+}
+.bordered2 {
+  border-top: 2px;
+  border-color: #F8DF1F;
+}
+span {
+  color: #ee252f;
 }
 ul {
   list-style-type: none;
@@ -15,10 +28,86 @@ ul li {
   display: inline;
   padding: 3%;
 }
-ul li span {
-  color: #ee252f;
-}
 nav {
   padding: 3.5%;
-  background-color: #F8DF1F;
+  background-color: #f8df1f;
+}
+.top {
+  margin: 0 auto;
+  width: 100%;
+  padding: 5%;
+  background-image: url('../img/banner-bg.png');
+  background-size: cover;
+  display: block;
+  text-align: center;
+}
+#logo {
+  max-width: 100%;
+}
+button {
+  text-align: center;
+  padding: 1.6% 4% 1.6% 4%;
+  background-color: #f8df1f;
+  border-radius: 8px;
+}
+#WBB {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+}
+#WBB img {
+  align-self: flex-end;
+  max-width: 100%;
+}
+#dine {
+  background-color: #f3f3f3;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+#dine img {
+  align-self: flex-end;
+  max-width: 100%;
+}
+footer {
+  border-top: 2px;
+  border-color: #F8DF1F;
+  background-color: #000000;
+  text-align: center;
+}
+footer img {
+  padding: 4%;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: .8em;
+  }
+  #WBB {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: space-around;
+    display: inline-flex;
+  }
+  #WBB img {
+    display: none;
+  }
+  #dine {
+    background-color: #f3f3f3;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: space-around;
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  #dine img {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  p {
+    font-size: .8em;
+  }
 }

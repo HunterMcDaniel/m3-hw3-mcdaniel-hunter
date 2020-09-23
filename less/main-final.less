@@ -3,21 +3,112 @@ body {
     font-family: @primary-font;
 }
 
-
+p{
+  font-size: 1.2em;
+}
 @import "variables";
+@import "mixins";
+
+span{
+  color: @color-primary;
+}
 
 ul{
   list-style-type: none;
   li{
     display: inline;
     padding: 3%;
-    span{
-      color: @color-primary;
-    }
   }
 }
 
 nav {
   padding: 3.5%;
-  background-color: #F8DF1F;
+  background-color: @color-secondary;
+}
+
+.top{
+  margin: 0 auto;
+  width: 100%;
+  padding: 5%;
+  background-image: url('../img/banner-bg.png');
+  background-size: cover;
+  display: block;
+  text-align: center;
+  }
+
+#logo{
+  max-width: 100%;
+}
+button{
+  text-align: center;
+  padding: 1.6% 4% 1.6% 4%;
+  background-color: @color-secondary;
+  .bordered();
+}
+
+#WBB{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+  img{
+    align-self: flex-end;
+    max-width: 100%;
+  }
+}
+
+#dine{
+  background-color: @color3;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  img{
+    align-self: flex-end;
+    max-width: 100%;
+  }
+}
+
+footer{
+  .bordered2();
+  background-color: @color4;
+  text-align: center;
+  img{
+    padding: 4%;
+  }
+}
+
+@media (max-width: 500px){
+p{
+  font-size: .8em;
+}
+#WBB{
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+  img{
+    display: none;
+  }
+}
+
+#dine{
+  background-color: @color3;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: space-around;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  img{
+    display: none;
+  }
+}
+
+}
+@media (max-width: 700px){
+p{
+  font-size: .8em;
+}
+
 }
