@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Kufam';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kufam/v2/C8c-4cY7pG7w_oSJDszBXsKCcBH3lqk7qQ.ttf) format('truetype');
+}
+.border-bottom-thick {
+  border-bottom: 40px solid #333333;
+}
+.border-bottom-thin {
+  border-bottom: 2px solid #333333;
+}
+.border-left {
+  border-left: 6px solid #333333;
+  padding-left: 10px;
+}
+.border-right {
+  border-right: 4px solid #333333;
+  padding-right: 10px;
+}
+body {
+  font-family: 'Kufam', cursive;
+}
+.btn-primary {
+  background-color: #333333;
+  border-color: #333333;
+}
+.btn-primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+.nav {
+  height: 40px;
+  background-color: #8adc60;
+}
+footer {
+  background-color: #333333;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#index .jumbotron {
+  background-image: linear-gradient(to right, #8adc60, #17981b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 40px solid #333333;
+}
+#index .jumbotron h1 {
+  display: inline-block;
+  border-left: 6px solid #333333;
+  padding-left: 10px;
+  border-right: 4px solid #333333;
+  padding-right: 10px;
+}
+#index section {
+  padding: 20px 0;
+}
+#index section h2 {
+  color: #de3e1e;
+  display: inline-block;
+  border-left: 6px solid #333333;
+  padding-left: 10px;
+  border-right: 4px solid #333333;
+  padding-right: 10px;
+}
+#index section h3 {
+  color: #17981b;
+  border-left: 6px solid #333333;
+  padding-left: 10px;
+}
+#index section h4 {
+  color: #8adc60;
+  margin-top: 40px;
+}
+#index section:first-of-type {
+  border-bottom: 2px solid #333333;
+}
